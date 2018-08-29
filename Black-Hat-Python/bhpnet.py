@@ -140,7 +140,7 @@ def client_handler(client_socket):
         # run the command
         output = run_command(execute)
         
-        client.socket.send(output)
+        client_socket.send(output)
         
     # now we go into another loop if a command shell was requested
     
